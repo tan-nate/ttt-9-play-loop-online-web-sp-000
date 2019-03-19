@@ -36,5 +36,9 @@ def turn(board)
 end
 
 def play(board)
-  until position_taken?(board, location)
+  counter = 0
+  until counter == 9 do
+    turn(board)
+    counter += 1
+  end
 end
